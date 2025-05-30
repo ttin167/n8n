@@ -20,6 +20,13 @@
     </select><br /><br />
 
     <button type="submit">Gửi yêu cầu</button>
+
+        <script>
+  if (sessionStorage.getItem("invalid_email") === "true") {
+    document.write("<p style='color:red;'>Email không hợp lệ. Vui lòng nhập lại.</p>");
+    sessionStorage.removeItem("invalid_email");
+  }
+</script>
   </form>
 </body>
 </html>
