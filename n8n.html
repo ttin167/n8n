@@ -1,0 +1,9 @@
+    <html>
+  <body>
+    <h2>Quét mã QR để thanh toán</h2>
+    <p>Chào {{ $json["body"]["name"] }}, bạn đã chọn template: <b>{{ $json["body"]["template"] }}</b></p>
+    <p>Vui lòng quét mã QR bên dưới để thanh toán:</p>
+    <img src="https://ttin167.github.io/n8n/3585b175-42d3-4255-9fb1-ab76477b47f8 (1).jpg" width="300px" />
+    <p>Sau khi thanh toán, bạn sẽ nhận được template qua email: {{ $json["body"]["email"] }}</p>
+  </body>
+</html>
